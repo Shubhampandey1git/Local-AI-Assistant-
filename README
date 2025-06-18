@@ -53,6 +53,9 @@ gemma      |  ~5.5 GB
 phi        |  ~2 GB or less
 
 -> If none of these work, you can't run any other Ollama LLMs in your system. You can then switch to OpenAI or HuggingFaceHub or use chat_model like ChatOpenAI for small project/learning use(Not recommended for a complete Application projects).
+
+-> Also you need to add a data/ folder in which your context data will reside.
+
 ======================================================================
 
 **This project is free for use or modifications.**
