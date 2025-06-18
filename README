@@ -1,0 +1,61 @@
+This Project Uses LLMs (LLaMA) to create a LOCAL AI ASSISTANT-SS
+(right now the tested part(test_nb) of the code is only available. The whole part with a GUI will soon be pushed.)
+====================================================================
+
+**PROCESS**
+
+1. Uses the PDFs provided by you.
+2. Reads & understands the PDF and divides it into smaller chunks using LangChain's PyPDFLoader and RecursiveCharacterTextSplitter.
+3. The chunks are converted into embeddings using the Langchain's HuggingFaceEmbeddings.
+4. And then stored in a Vector Database (ChromaDB).
+5. RAG chain is implemented using RetrievalQA.
+6. Uses Ollama2 for running llama locally.
+
+======================================================================
+
+**Packages**
+Using 'pip install' command install these packages first:
+langchain
+langchain-community
+chromadb
+unstructured[all-docs]
+pypdf
+sentence-transformers
+ollama
+*use 'ollama pull llama2' to pull the llama2(usually llama2:7b or llama2:13b)
+
+======================================================================
+
+**Libraries**
+
+PyPDFLoader
+RecursiveCharacterTextSplitter
+HuggingFaceEmbeddings
+Chroma
+RetrievalQA
+Ollama
+
+======================================================================
+
+**Note**
+
+-> You need to download the Ollama from the ollama official website
+
+-> llama requires high RAM to be used. I personally had to change the devices just to use Ollama.
+
+-> Here is the list of all the LLMs you can use according to how much RAM is available for use:
+
+LLM        |  Min. RAM Req.
+---------------------------
+llama2:7b |  ~7.5 GB
+mistral    |  ~6.7 GB
+gemma      |  ~5.5 GB
+phi        |  ~2 GB or less
+
+-> If none of these work, you can't run any other Ollama LLMs in your system. You can then switch to OpenAI or HuggingFaceHub or use chat_model like ChatOpenAI for small project/learning use(Not recommended for a complete Application projects).
+======================================================================
+
+**This project is free for use or modifications.**
+
+Signing off,
+Shubham Pandey
