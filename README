@@ -15,6 +15,7 @@ This Project Uses LLMs (LLaMA) to create a LOCAL AI ASSISTANT-SS
 
 **Packages**
 Using 'pip install' command install these packages first:
+gradio
 langchain
 langchain-community
 chromadb
