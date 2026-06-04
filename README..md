@@ -1,8 +1,9 @@
+# Intoduction
 This Project Uses LLMs (LLaMA) to create a LOCAL AI ASSISTANT-SS
 
-====================================================================
+---
 
-**PROCESS**
+# **PROCESS**
 
 1. Uses the PDFs provided by you.
 2. Reads & understands the PDF and divides it into smaller chunks using LangChain's PyPDFLoader and RecursiveCharacterTextSplitter.
@@ -11,9 +12,10 @@ This Project Uses LLMs (LLaMA) to create a LOCAL AI ASSISTANT-SS
 5. RAG chain is implemented using RetrievalQA.
 6. Uses Ollama2 for running llama locally.
 
-======================================================================
+---
 
-**Packages**
+# **Packages**
+
 Using 'pip install' command install these packages first:
 gradio
 langchain
@@ -25,9 +27,9 @@ sentence-transformers
 ollama
 *use 'ollama pull llama2' to pull the llama2(usually llama2:7b or llama2:13b)
 
-======================================================================
+---
 
-**Libraries**
+# **Libraries**
 
 PyPDFLoader
 RecursiveCharacterTextSplitter
@@ -36,9 +38,9 @@ Chroma
 RetrievalQA
 Ollama
 
-======================================================================
+---
 
-**Note**
+# **Note**
 
 -> You need to download the Ollama from the ollama official website
 
@@ -57,9 +59,9 @@ phi        |  ~2 GB or less
 
 -> Also you need to add a data/ folder in which your context data will reside.
 
-======================================================================
+---
 
-**This project is free for use or modifications.**
+# **This project is free for use or modifications.**
 
 Signing off,
 Shubham Pandey
